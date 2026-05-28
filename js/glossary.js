@@ -1,0 +1,20 @@
+// Begriffs-Definitionen für Info-Popover.
+export const GLOSSARY = {
+  histamin:{t:"Histamin", d:"Ein biogenes Amin, das natürlich in vielen Lebensmitteln steckt und bei der Reifung/Gärung zunimmt. Empfindliche Menschen (Histamin-Intoleranz) reagieren mit Kopfschmerz, Hautrötung u.a. Einordnung hier nach SIGHI (histaminintoleranz.ch)."},
+  reich:{t:"histaminreich", d:"Hoher Histamingehalt (SIGHI-Kategorie 2–3): gereift, fermentiert, gepökelt, geräuchert oder lange haltbar – z.B. reifer Käse, Salami, Sauerkraut, Rotwein."},
+  liberator:{t:"Histamin-Liberator", d:"Enthält selbst wenig Histamin, kann aber körpereigenes Histamin freisetzen oder andere biogene Amine liefern (SIGHI-Kat. 1) – z.B. Zitrusfrüchte, Erdbeere, Tomate, Spinat, Schokolade, Nüsse."},
+  arm:{t:"histaminarm", d:"Gut verträglich (SIGHI-Kat. 0): frisch und unfermentiert."},
+  unklar:{t:"unklar", d:"Nur fangfrisch histaminarm – Histamin steigt bei Fisch nach dem Fang rasch an."},
+  nrv:{t:"NRV — Nährstoff-Referenzwert", d:"EU-Referenzwert für die empfohlene Tageszufuhr (Annex XIII, VO 1169/2011). „Quelle von“ ab 15 % NRV/100 g, „hoher Gehalt“ ab 30 %. 100 % = der ganze Tagesbedarf in 100 g."},
+  efsa:{t:"EFSA", d:"Europäische Behörde für Lebensmittelsicherheit. Das EU-Register (VO 432/2012) listet die rechtlich zugelassenen Health Claims – ausschließlich Nährstoff-Funktionen, keine Krankheits-Heilversprechen."},
+  iarc:{t:"WHO-IARC", d:"Internationale Krebsforschungsagentur der WHO. Stuft Stoffe nach Krebsrisiko ein: Gruppe 1 = karzinogen (z.B. Alkohol, verarbeitetes Fleisch), 2A = wahrscheinlich karzinogen (rotes Fleisch)."},
+  wcrf:{t:"WCRF", d:"World Cancer Research Fund – bewertet die Evidenz zwischen Ernährung und Krebs in Stufen (überzeugend / wahrscheinlich / begrenzt)."},
+  tier_A:{t:"Evidenz A — autorisiert", d:"EFSA-zugelassener Funktions-Health-Claim. Gilt, wenn das Lebensmittel „Quelle von“ dem verantwortlichen Nährstoff ist (≥15 % NRV). Die solideste Stufe."},
+  tier_B:{t:"Evidenz B — stark", d:"Belegt durch anerkannte Autoritäten: WHO-IARC, WCRF, Cochrane-Reviews oder große Meta-Analysen. Enthält auch die Risiko-Einstufungen."},
+  tier_C:{t:"Evidenz C — vorläufig", d:"Hinweise aus Beobachtungsstudien, Mechanismus oder Zellkultur/Tiermodell – nicht klinisch gesichert."},
+  tier_D:{t:"Evidenz D — unbelegt", d:"Traditionelle Angabe ohne belastbare Evidenz. Transparent behalten, aber klar als schwach markiert."},
+  lens:{t:"Evidenz-Linse", d:"Blendet alle Wirkungen unterhalb der gewählten Evidenz-Stufe aus. So sieht man, wie viel „Ernährungswissen“ wirklich belegt ist."},
+  density:{t:"Nährstoff-Dichte", d:"Anzahl der Mikronährstoffe, bei denen das Lebensmittel „Quelle von“ ist (≥15 % NRV/100 g). Ein einfacher Indikator, wie nährstoffreich ein Lebensmittel ist."},
+  prio:{t:"Quellen-Priorität", d:"Nährwerte: Schweizer Nährwertdatenbank (Prio 1, maßgeblich) vor USDA (Prio 2, Vergleichswert)."},
+  sparkline:{t:"Makro-Balken", d:"Die fünf Balken zeigen die Makronährstoffe pro 100 g – v.l.n.r. Protein · Kohlenhydrate · Fett · Ballaststoffe · Zucker – skaliert auf eine gemeinsame Referenz (55 g), damit Karten vergleichbar sind. Hoch ≠ automatisch „gesund“."},
+};

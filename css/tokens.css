@@ -1,0 +1,77 @@
+/* ============================================================
+   Design Tokens — Palette + Hell/Dunkel-Themes
+   ============================================================ */
+:root {
+  /* Roh-Palette (vom User) */
+  --dusty-rose: #bf888d;
+  --rosy-taupe: #d29da3;
+  --cotton-rose: #e0c0c3;
+  --platinum: #ebebeb;
+  --ash-grey: #c5d3c6;
+  --muted-teal: #9fbba1;
+  --muted-teal-2: #899d8a;
+  --grey: #797c77;
+
+  /* Evidenz-Tier-Skala (grün = solide → grau = vage, rosé = Risiko) */
+  --tier-a: #8fb191;
+  --tier-b: #b7c9b3;
+  --tier-c: #d29da3;
+  --tier-d: #b3a9a7;
+  --risk:   #bf888d;
+
+  /* Typografie & Form */
+  --font: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --r-sm: 8px;  --r-md: 14px;  --r-lg: 22px;  --r-pill: 999px;
+  --sp: 8px;
+  --ease: cubic-bezier(.22,.61,.36,1);
+  --dur: .42s;
+  --shadow-sm: 0 1px 3px rgba(60,50,50,.08), 0 1px 2px rgba(60,50,50,.06);
+  --shadow-md: 0 6px 22px rgba(70,55,55,.10), 0 2px 6px rgba(70,55,55,.07);
+  --shadow-lg: 0 18px 50px rgba(60,45,45,.16);
+  --maxw: 1240px;
+}
+
+/* ---------- HELL (Default) ---------- */
+:root, [data-theme="light"] {
+  --bg: #f5f2f1;
+  --bg-grad: radial-gradient(1200px 800px at 12% -10%, #f0eceb 0%, #f5f2f1 45%, #f2eeed 100%);
+  --surface: #fffdfc;
+  --surface-2: #faf6f5;
+  --surface-3: #f1ebea;
+  --border: #e7dcdb;
+  --border-strong: #d8c8c8;
+  --ink: #3c3f3a;
+  --ink-soft: #5c5f59;
+  --muted: #8a8d86;
+  --accent: #7fa382;        /* teal, etwas tiefer für Kontrast */
+  --accent-2: #bf888d;      /* rosé */
+  --accent-soft: #e0c0c3;
+  --chip-bg: #f0eae9;
+  --tooltip-bg: #34322f;
+  --tooltip-ink: #f5f2f1;
+  --grid: #ece4e3;
+}
+
+/* ---------- DUNKEL ---------- */
+[data-theme="dark"] {
+  --bg: #1e211d;
+  --bg-grad: radial-gradient(1200px 800px at 12% -10%, #25292310 0%, #1e211d 55%);
+  --surface: #272b26;
+  --surface-2: #2e332d;
+  --surface-3: #343a33;
+  --border: #3a4038;
+  --border-strong: #4a5147;
+  --ink: #ebebeb;
+  --ink-soft: #cdd2c9;
+  --muted: #9aa096;
+  --accent: #9fbba1;
+  --accent-2: #d29da3;
+  --accent-soft: #5a4a4b;
+  --chip-bg: #32382f;
+  --tooltip-bg: #0d0f0c;
+  --tooltip-ink: #ebebeb;
+  --grid: #333a31;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.3);
+  --shadow-md: 0 8px 26px rgba(0,0,0,.4);
+  --shadow-lg: 0 20px 54px rgba(0,0,0,.5);
+}

@@ -1,0 +1,8 @@
+# Reine statische Seite — kein Build-Step. Wenn dieses Verzeichnis das Repo-Root
+# ist, genügt "git push" + Netlify. Liegt es als Unterordner im Repo, in den
+# Netlify-Settings "Base directory" bzw. "Publish directory" auf diesen Ordner setzen.
+[build]
+  publish = "."
+  command = ""
+
+# Sicherheits-Header siehe ./_headers (Netlify liest beide; _headers ist die Quelle der Wahrheit).

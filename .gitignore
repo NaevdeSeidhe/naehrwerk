@@ -1,0 +1,8 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+*~
+.vscode/
+.idea/
+
+# nichts aus der Daten-Pipeline gehört hier rein – nur das fertige Web-Bundle

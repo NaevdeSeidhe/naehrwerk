@@ -4,6 +4,17 @@ Interaktiver Explorer für 328 Lebensmittel mit Nährwerten (Schweizer Nährwert
 und Gesundheitswirkungen, die nach Evidenz-Stufen A–D eingeordnet sind. Statische Web-App,
 **kein Build-Step**, reine ES-Module + D3.js.
 
+## Was kann man hier machen
+
+- **Explorer** — alle 328 Lebensmittel als filterbares Kartenraster: suchen, nach Kategorie, Histamin-Verträglichkeit oder Wirkungs-Cluster filtern und sortieren (A–Z, nährstoffreichste, meiste Wirkungen). Jede Karte öffnet die Detailansicht.
+- **Detailansicht** (Klick auf ein Lebensmittel) — Nährstoff-Radar in % des EU-Referenzwerts, direkter Schweiz-vs.-USDA-Vergleich, Makronährstoff-Balken und alle Wirkungen nach Themen gruppiert mit Evidenz-Stufe und Quelle.
+- **Wirkungen** — nach Themen-Clustern (z.B. Herz-Kreislauf, Entzündung) durchstöbern: welche Wirkungen es gibt und welche Lebensmittel sie liefern. Balkenlänge = Anzahl Lebensmittel, Farbe = beste Evidenz.
+- **Nährstoff-Lab** — ein einzelner Nährstoff über alle Lebensmittel hinweg: Verteilungs-Schwarm plus Top-20-Rangliste.
+- **Heatmap** — Lebensmittel × Nährstoffe als Farbmatrix (% Referenzwert), zeigt Stärken und Lücken auf einen Blick.
+- **Evidenz** — Dashboard zur Beleglage: Anteil der Aussagen je Stufe A–D und ein anklickbarer Sunburst (Stufe → Cluster), der die zugehörigen Aussagen auflistet.
+- **Vergleich** — mehrere Lebensmittel nebeneinander als Radar-Overlay und Tabelle.
+- **Evidenz-Linse** (oben, global) — blendet per Schwelle alle Wirkungen unterhalb einer gewählten Evidenz-Stufe in der ganzen App aus.
+
 ## Lokal starten
 
 `fetch()` und ES-Module laufen nicht über `file://`, also über einen lokalen Server öffnen:
@@ -12,18 +23,6 @@ und Gesundheitswirkungen, die nach Evidenz-Stufen A–D eingeordnet sind. Statis
 python3 -m http.server 8765
 # dann http://localhost:8765/ öffnen
 ```
-
-## Deployment (GitHub + Netlify)
-
-Diese App ist zu 100 % statisch — keine Datenbank, kein Backend, kein Build.
-
-1. Inhalt dieses Ordners in ein Git-Repo legen und pushen.
-2. In Netlify das Repo verbinden. Build command **leer**, Publish directory auf den
-   Ordner mit `index.html` (dieses Verzeichnis) setzen.
-3. Fertig. `_headers` und `netlify.toml` setzen die Sicherheits-Header automatisch.
-
-Liegt dieser Ordner als Unterordner in einem größeren Repo, in den Netlify-Settings
-„Base directory"/„Publish directory" entsprechend setzen.
 
 ## Sicherheit
 
